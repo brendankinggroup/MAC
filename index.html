@@ -123,11 +123,11 @@ section{padding:100px 48px;position:relative}
 /* VALUES GRID */
 .lifestyle{overflow:hidden}
 .life-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:56px}
-.life-card{position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:36px 28px 32px;border:1px solid rgba(255,255,255,0.06);transition:all .5s;min-height:300px;background-size:cover;background-position:center}
+.life-card{position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:36px 28px 32px;border:none;outline:1px solid rgba(255,255,255,0.06);transition:all .5s;min-height:300px;background-size:cover;background-position:center}
 .life-card::before{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,10,0.92) 30%,rgba(10,10,10,0.55) 70%,rgba(10,10,10,0.3) 100%);z-index:1;transition:all .5s}
 .life-card:hover::before{background:linear-gradient(to top,rgba(10,10,10,0.88) 25%,rgba(10,10,10,0.45) 70%,rgba(10,10,10,0.2) 100%)}
 .life-card>*{position:relative;z-index:2}
-.life-card:hover{border-color:rgba(201,169,110,0.3);transform:translateY(-4px)}
+.life-card:hover{outline-color:rgba(201,169,110,0.3);transform:translateY(-4px)}
 .life-card-num{font-size:.58rem;font-weight:600;letter-spacing:.3em;color:var(--ac);margin-bottom:auto;padding-top:4px}
 .life-card-accent{width:28px;height:1px;background:var(--ac);margin-bottom:18px;transition:width .4s}
 .life-card:hover .life-card-accent{width:52px}
